@@ -184,4 +184,16 @@ p {
     line-height: 2;
 }
 
+.log{
+  background-color: rgb(236, 166, 166);
+  width:500px;
+  height: 200px;
 
+margin: auto;
+  text-align: center;
+  border: solid 5px rgb(133, 43, 43);
+  color: #f1f1f1;
+}
+.bt{
+  border: solid 3px red;
+}
