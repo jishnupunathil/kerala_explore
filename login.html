@@ -28,11 +28,11 @@
       <!-- HEADER -->
     <section>
 
-         <form action="./log.html">
+         <form action="./log.html" onsubmit="return checkMail();">
             <div class="form-group">
               <label class="text-white" for="exampleInputEmail1">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
-              <!-- <small id="emailHelp" class="form-text text-white">We'll never share your email with anyone else.</small> -->
+              <input type="text"  id="emaillog" aria-describedby="emailHelp" placeholder="Enter email" required>
+              <label for="error" id="emailerror"></label>
             </div> <br>
             <div class="form-group">
               <label class="text-white" for="exampleInputPassword1">Password</label>
@@ -58,5 +58,6 @@
       </div>
       <!-- Copyright -->
     </footer>
+    <script src="./script.js"></script>
 </body> 
 </html>
