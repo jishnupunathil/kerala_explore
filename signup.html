@@ -30,7 +30,7 @@
       </nav>
       <!-- HEADER -->
         <section >
-        <form action="./sign.html" id="form1" style="border:solid 1px rgb(245, 115, 245) none; width: 500px; position: relative; margin-top: 5%; margin-left: 500px; margin-bottom: 20%;">
+        <form action="./sign.html" id="form1"  onsubmit="return validate();" style="border:solid 1px rgb(245, 115, 245) none; width: 500px; position: relative; margin-top: 5%; margin-left: 500px; margin-bottom: 20%;">
             <div class="container">
               <!-- <div class="row"> -->
                 <!-- <div class="col-lg-4"> -->
@@ -49,11 +49,11 @@
 
               <label for="psw" ><b>Password</b></label>
               <input type="password" placeholder="Enter Password" name="psw" id="PassEntry" class="form-control passwordInput"><br>
-              <!-- <span id="StrengthDisp" class="badge displayBadge">Weak</span> -->
+              <span id="StrengthDisp" class="badge displayBadge">Weak</span>
           
               <label for="psw-repeat"><b>Repeat Password</b></label>
               <span id="message"></span><br>
-              <input type="password" placeholder="Repeat Password" name="psw-repeat" id="rePassEntry">
+              <input type="password" placeholder="Repeat Password" name="psw-repeat" id="rePassEntry" onkeyup="check()">
               
           
               <label>
@@ -80,5 +80,6 @@
           </div>
           <!-- Copyright -->
         </footer>
+        <script src="./script.js"></script>
 </body>
 </html>
