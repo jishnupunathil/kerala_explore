@@ -1,7 +1,8 @@
 const form =document.getElementsByTagName('form')[0]
+
 let emaillog=document.getElementById("emaillog")
 let emailerror=document.getElementById("emailerror")
-let btns =document.getElementById("btns")
+
 
 
 function checkMail(){
